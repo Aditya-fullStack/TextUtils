@@ -1,0 +1,76 @@
+n<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS short</title>
+</head>
+<script>
+    "use strict";
+    let s=34;
+    let a='This is me';
+    const m=45;
+    console.log(s);
+    console.log(a);
+    console.log(m);
+    let n=45;
+    n=45+6
+    console.log(n);
+    
+    // Data type
+    // {
+    //      String 
+    //      Boolean
+    //      Number
+    //      Object
+    //      undefined
+    //      null
+
+    // }
+
+
+    function hello()
+    {
+        console.log('I am Adi');
+    }
+    let obj = {
+        r:34,
+        m:64,
+        
+        func: function myfunc(number){
+            console.log("The number is : "+number);
+        }
+    }
+    document.addEventListener("click", function click()
+    {
+        console.log("Clicked");
+         alert("hello");
+         let conf=confirm("Are you sure");
+        console.log(conf);
+    })
+
+    let arr= [2,5,6,89];
+    console.log(this);
+
+    let mobj={
+        a:this,
+        myfunc:function(number)
+        {
+            console.log("the number is :"+this);
+        }
+    }
+    mobj.myfunc();
+    console.log(mobj.a);
+    setTimeout(()=>
+    {
+        console.log("Hi i m aditya")
+    },5000);
+    console.log("mai neeche hoon")
+
+    
+</script>
+<body>
+    I am learning js.
+</body>
+</html>
